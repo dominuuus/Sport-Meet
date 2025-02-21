@@ -4,11 +4,11 @@ import icons from '../icons/icon.js';
 export function Post() {
     return (
         <article className={styles.post}>
-            <header>
+            <header className={styles.headerPost}>
                 <div className={styles.author}>
-                    <img src={icons.profileAvatar} />
-                    <div>
-                        <strong>Domingos Santiago</strong>
+                    <img className={styles.avatar} src={icons.profileAvatar} />
+                    <div className={styles.authorInfo}>
+                        <strong className={styles.author}>Domingos Santiago</strong>
                         <span>@dominuuus</span>
                     </div>
                 </div>
@@ -20,6 +20,14 @@ export function Post() {
                 <p>Hoje a pedalada foi maravilhosa</p>
                 <p>Vem fazer parte do grupo!</p>
             </div>
+
+            <form className={styles.commentForm}>
+                <strong>Comentários</strong>
+                <textarea placeholder='Deixe um comentário'></textarea>
+                <footer>
+                    <button type='submit'>Publicar</button>
+                </footer>
+            </form>
         </article>
     )
 }
