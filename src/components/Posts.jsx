@@ -19,6 +19,7 @@ export function Post() {
                 <p>Fala galera!</p>
                 <p>Hoje a pedalada foi maravilhosa</p>
                 <p>Vem fazer parte do grupo!</p>
+                <p>Todo sábado às 9h da manhã</p>
             </div>
 
             <form className={styles.commentForm}>
