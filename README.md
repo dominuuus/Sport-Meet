@@ -67,3 +67,6 @@ Antes de começar, certifique-se de ter instalado em sua máquina:
    ```bash
    git clone https://github.com/dominuuus/Sport-Meet.git
    cd Sport-Meet
+
+
+💡 Este repositório ainda está em atualização, novas funcionalidades serão implementadas ao longo do desenvolvimento do projeto!
