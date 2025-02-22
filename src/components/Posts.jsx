@@ -1,12 +1,14 @@
 import styles from './Posts.module.css';
 import icons from '../icons/icon.js';
+import { Comment } from './Comment.jsx';
+import { Avatar } from './Avatar.jsx';
 
 export function Post() {
     return (
         <article className={styles.post}>
             <header className={styles.headerPost}>
                 <div className={styles.author}>
-                    <img className={styles.avatar} src={icons.profileAvatar} />
+                    <Avatar hasBorder={false} src={icons.profileAvatar} />
                     <div className={styles.authorInfo}>
                         <strong className={styles.author}>Domingos Santiago</strong>
                         <span>@dominuuus</span>
@@ -29,6 +31,12 @@ export function Post() {
                     <button type='submit'>Publicar</button>
                 </footer>
             </form>
+
+            <div className={styles.commentList}>
+                <Comment />
+                <Comment />
+                <Comment />
+            </div>
         </article>
     )
 }

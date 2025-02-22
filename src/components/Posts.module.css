@@ -47,16 +47,6 @@
     flex-direction: column;
 }
 
-.avatar {
-    width: calc(3rem + 12px);
-    height: calc(3rem + 12px);
-    border-radius: 8px;
-    object-fit: cover;
-    margin-top: -2rem;
-    border: 2px solid #000;
-    outline: 2px solid #8a1a1a;
-}
-
 .authorInfo strong {
     display: flex;
     line-height: 1.6rem;
@@ -112,4 +102,8 @@
 
 .commentForm button[type=submit]:hover {
     background-color: green;
+}
+
+.commentList {
+    margin-top: 2rem;
 }

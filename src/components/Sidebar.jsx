@@ -1,6 +1,7 @@
 import styles from './Sidebar.module.css';
 import icons from '../icons/icon.js';
 import { PencilLine, UsersThree, Bicycle } from  'phosphor-react';
+import { Avatar } from './Avatar.jsx';
 
 export function Sidebar() {
     return (
@@ -8,7 +9,7 @@ export function Sidebar() {
             <img className={styles.cover} src={icons.capaUsuario} />
 
             <div className={styles.profile}>
-                <img className={styles.avatar} src={icons.profileAvatar}/>
+                <Avatar hasBorder src={icons.profileAvatar}/>
                 <strong>Domingos Santiago</strong>
                 <span>@dominuuus</span>
             </div>
