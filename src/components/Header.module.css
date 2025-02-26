@@ -1,11 +1,41 @@
 .header {
     background-color: #FFDB08;
-    display: flex;
-    justify-content: center;
-    padding: 1.25rem 0;
     height: 5rem;
+    display: grid;
+    grid-template-columns: 250px 300px 500px; 
+    gap: 20px;
+    padding: 0 1rem;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 100;
+    left: 0;
+    box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
 }
 
-.header img {
-    height: 3rem;
+.avatar img {
+    max-width: 3rem;
+    border-radius: 50%;
 }
+
+.linksAccess {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    align-items: center;
+}
+
+.linksAccess a {
+    gap: 20px;
+    text-align: right;
+}
+
+.socialMedias {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.socialMedias img {
+    max-width: 2rem;
+}
+
